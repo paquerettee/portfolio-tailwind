@@ -34,8 +34,8 @@
 
   <body class="bg-white text-gray-800">
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full flex justify-end px-5 py-4 bg-white shadow z-50">
-      <div class="w-1/2"></div>
+    <nav class="fixed top-0 w-full flex flex-col items-end px-5 py-4 bg-white shadow z-50">
+      <!-- <div class="w-1/2"></div> -->
       <button class="md:hidden text-gray-600">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -46,12 +46,18 @@
           />
         </svg>
       </button>
-      <ul class="hidden md:flex space-x-6 items-end">
-        <li><a href="#" class="text-gray-800 hover:underline">Home</a></li>
-        <li><a href="#about" class="text-gray-800 hover:underline">About</a></li>
-        <li><a href="#skills" class="text-gray-800 hover:underline">Skills</a></li>
-        <li><a href="#projects" class="text-gray-800 hover:underline">Projects</a></li>
-        <li><a href="#contact" class="text-gray-800 hover:underline">Contact</a></li>
+      <ul id="mobileMenu" class="hidden md:flex space-y-2 md:space-x-6 items-end">
+        <li class="text-right"><a href="#" class="text-gray-800 hover:underline">Home</a></li>
+        <li class="text-right"><a href="#about" class="text-gray-800 hover:underline">About</a></li>
+        <li class="text-right">
+          <a href="#skills" class="text-gray-800 hover:underline">Skills</a>
+        </li>
+        <li class="text-right">
+          <a href="#projects" class="text-gray-800 hover:underline">Projects</a>
+        </li>
+        <li class="text-right">
+          <a href="#contact" class="text-gray-800 hover:underline">Contact</a>
+        </li>
       </ul>
     </nav>
 
@@ -291,5 +297,6 @@
     <footer class="py-6 mt-6 bg-white">
       <p class="text-xs text-center text-gray-500">© 2025 Kathy</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
