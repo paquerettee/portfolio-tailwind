@@ -12,6 +12,17 @@
             fontFamily: {
               garamond: ['"Cormorant Garamond"', "serif"],
               rosarivo: ['"Rosarivo"', "cursive"],
+              roboto: ["Roboto", "sans-serif"],
+              body: [
+                "system-ui",
+                "-apple-system",
+                '"Segoe UI"',
+                "Roboto",
+                '"Helvetica Neue"',
+                "Arial",
+                '"Noto Sans"',
+                "sans-serif",
+              ],
             },
             backgroundImage: {
               "header-bg": "url('./img/watercolor-4114530_1280_12.png')",
@@ -30,10 +41,11 @@
       href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-white text-gray-800">
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full flex justify-end px-5 py-2 bg-white shadow z-50">
+    <nav class="fixed top-0 w-full flex justify-end px-5 py-4 bg-white shadow z-50">
       <div class="w-1/2"></div>
       <button class="md:hidden text-gray-600">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,15 +68,15 @@
 
     <!-- Header -->
     <header class="pt-24 min-h-[500px] bg-header-bg bg-center bg-no-repeat bg-cover text-center">
-      <h1 class="text-4xl font-bold font-rosarivo">Hi I'm Kathy</h1>
-      <h3 class="text-xl mt-2 font-rosarivo">webdeveloper</h3>
+      <h1 class="text-6xl font-bold font-rosarivo">Hi I'm Kathy</h1>
+      <h3 class="text-3xl mt-2 font-body font-medium">software developer</h3>
     </header>
 
     <!-- About Section -->
     <section id="about" class="py-10">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold py-3 font-rosarivo">About me</h2>
-        <p class="text-lg leading-relaxed">
+        <h2 class="text-5xl font-bold py-3 font-rosarivo">About me</h2>
+        <p class="text-xl leading-relaxed font-body font-light">
           Hi, I’m Kathy. I’ve always loved math and foreign languages, so tech felt like a natural
           choice — a space where I could make practical use of both. I started studying at Wrocław
           University of Technology and earned my master’s degree in Computer Science. I began my
@@ -81,7 +93,7 @@
     <!-- Skills Section -->
     <section id="skills" class="py-10 text-center bg-skills-bg bg-center bg-no-repeat">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold font-rosarivo">Skills</h2>
+        <h2 class="text-5xl font-bold font-rosarivo">Skills</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
           <div>
             <h4 class="text-xl font-semibold mb-2 font-rosarivo">development</h4>
@@ -119,7 +131,7 @@
     <!-- Projects Section -->
     <section id="projects" class="py-10">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center py-3 font-rosarivo">Projects</h2>
+        <h2 class="text-5xl font-bold text-center py-3 font-rosarivo">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
           <!-- Project 1 -->
           <div class="bg-white shadow rounded overflow-hidden h-full">
@@ -195,7 +207,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-10 bg-contact-bg bg-center bg-no-repeat">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center py-3 font-rosarivo">Contact me</h2>
+        <h2 class="text-5xl font-bold text-center py-3 font-rosarivo">Contact me</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 w-full">
           <!-- Contact Info -->
           <div class="flex justify-center">
